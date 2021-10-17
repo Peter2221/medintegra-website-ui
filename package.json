@@ -1,0 +1,22 @@
+{
+  "name": "medintegra-website-ui",
+  "version": "1.0.0",
+  "description": "Medintegra website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peter2221/medintegra-website-ui/issues"
+  },
+  "homepage": "https://github.com/Peter2221/medintegra-website-ui#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "tailwindcss": "^2.2.17",
+    "vite": "^2.6.7"
+  }
+}

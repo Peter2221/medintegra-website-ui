@@ -8,25 +8,316 @@
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <nav>
-            <a href="#">
-                <img class="h-20" src="./assets/logo.jpg" alt="Medintegra" />
-            </a>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Oferta</a></li>
-                <li><a href="">Realizacje</a></li>
-                <li><a href="">Firma</a></li>
-                <li><a href="">Kontakt</a></li>
+        <nav class="shadow-md p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <a href="#">
+                    <img
+                        class="h-12"
+                        src="./assets/logo.jpg"
+                        alt="Medintegra"
+                    />
+                </a>
+                <ul class="hidden md:flex">
+                    <li class="mr-12 hover:text-blue-600">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="mr-12"><a href="">Oferta</a></li>
+                    <li class="mr-12"><a href="">Realizacje</a></li>
+                    <li class="mr-12"><a href="">Firma</a></li>
+                    <li><a href="">Kontakt</a></li>
+                </ul>
+                <div class="md:hidden mr-4">
+                    <button class="outline-none mobile-menu-button">
+                        <svg
+                            class="w-6 h-6 text-gray-900"
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <ul class="hidden mt-3">
+                <li class="mb-1">
+                    <a href="">Home</a>
+                </li>
+                <li class="mb-1"><a href="">Oferta</a></li>
+                <li class="mb-1"><a href="">Realizacje</a></li>
+                <li class="mb-1"><a href="">Firma</a></li>
+                <li class="mb-1"><a href="">Kontakt</a></li>
             </ul>
         </nav>
 
         <main>
-            <section></section>
+            <section class="my-2 p-4 text-center">
+                <h1 class="text-3xl text-gray-900 leading-10 font-bold">
+                    Nowoczesne <br />
+                    Projekty
+                </h1>
+                <p class="mt-2 text-gray-500">
+                    Tworzymy najlepsze produkty i rozwiązania Dla Ciebie i
+                    Twojej firmy
+                </p>
+                <div class="mt-6">
+                    <a
+                        class="
+                            border-2 border-gray-700 border-solid
+                            px-5
+                            py-2
+                            rounded-full
+                            text-sm text-gray-700
+                            mr-2
+                        "
+                        href=""
+                        >Kontakt</a
+                    >
+                    <a
+                        class="
+                            bg-gray-700
+                            px-5
+                            py-2
+                            rounded-full
+                            text-sm text-gray-200
+                            border-2 border-gray-700
+                        "
+                        href=""
+                        >Oferta</a
+                    >
+                </div>
+            </section>
+
+            <section class="my-2 p-4 container mx-auto">
+                <h2 class="text-center text-2xl font-bold mb-2">Oferta</h2>
+                <p class="leading-7 text-center text-gray-700 mb-4">
+                    Oferujemy kompleksowe rozwiązania w zakresie realizacji
+                    systemów fotowoltaicznych dla domów, firm, czy farm. Efektem
+                    tych działań będą realne oszczędności, minimalizacja
+                    rachunków i niezależność energetyczna.
+                </p>
+                <div class="flex flex-col md:flex-row items-center gap-4">
+                    <div
+                        class="
+                            flex flex-col
+                            items-center
+                            p-4
+                            shadow-lg
+                            rounded-lg
+                            w-3/4
+                        "
+                    >
+                        <div
+                            class="
+                                rounded-full
+                                p-2
+                                shadow-sm
+                                flex
+                                items-center
+                                mb-2
+                            "
+                        >
+                            <img src="./assets/logo_circle.png" alt="" />
+                        </div>
+                        <span class="text-lg font-bold text-center"
+                            >Budowa domów</span
+                        >
+                        <span class="text-gray-800 text-center mt-2"
+                            >Oferujemy najlepsze instalacje fotowoltaiczne dla
+                            Ciebie i Twojej firmy</span
+                        >
+                        <a
+                            class="
+                                mt-4
+                                px-5
+                                py-2
+                                rounded-full
+                                text-sm text-gray-700
+                                border-2 border-dotted border-gray-700
+                            "
+                            href=""
+                            >Sprawdź</a
+                        >
+                    </div>
+                    <div
+                        class="
+                            flex flex-col
+                            items-center
+                            p-4
+                            shadow-lg
+                            rounded-lg
+                            w-3/4
+                        "
+                    >
+                        <div
+                            class="
+                                rounded-full
+                                p-2
+                                shadow-sm
+                                flex
+                                items-center
+                                mb-2
+                            "
+                        >
+                            <img src="./assets/logo_circle.png" alt="" />
+                        </div>
+                        <span class="text-lg font-bold text-center"
+                            >Budowa domów</span
+                        >
+                        <span class="text-gray-800 text-center mt-2"
+                            >Oferujemy najlepsze instalacje fotowoltaiczne dla
+                            Ciebie i Twojej firmy</span
+                        >
+                        <a
+                            class="
+                                mt-4
+                                px-5
+                                py-2
+                                rounded-full
+                                text-sm text-gray-700
+                                border-2 border-dotted border-gray-700
+                            "
+                            href=""
+                            >Sprawdź</a
+                        >
+                    </div>
+                    <div
+                        class="
+                            flex flex-col
+                            items-center
+                            p-4
+                            shadow-lg
+                            rounded-lg
+                            w-3/4
+                        "
+                    >
+                        <div
+                            class="
+                                rounded-full
+                                p-2
+                                shadow-sm
+                                flex
+                                items-center
+                                mb-2
+                            "
+                        >
+                            <img src="./assets/logo_circle.png" alt="" />
+                        </div>
+                        <span class="text-lg font-bold text-center"
+                            >Budowa domów</span
+                        >
+                        <span class="text-gray-800 text-center mt-2"
+                            >Oferujemy najlepsze instalacje fotowoltaiczne dla
+                            Ciebie i Twojej firmy</span
+                        >
+                        <a
+                            class="
+                                mt-4
+                                px-5
+                                py-2
+                                rounded-full
+                                text-sm text-gray-700
+                                border-2 border-dotted border-gray-700
+                            "
+                            href=""
+                            >Sprawdź</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="my-2 p-4 container mx-auto">
+                <h2 class="text-center text-2xl font-bold mb-2">Realizacje</h2>
+                <p class="leading-7 text-center text-gray-700 mb-4">
+                    Oferujemy kompleksowe rozwiązania w zakresie realizacji
+                    systemów fotowoltaicznych dla domów, firm, czy farm. Efektem
+                    tych działań będą realne oszczędności, minimalizacja
+                    rachunków i niezależność energetyczna.
+                </p>
+            </section>
+
+            <section class="my-2 p-4 py-8 bg-gray-100">
+                <div class="container mx-auto">
+                    <h2 class="text-center text-2xl font-bold mb-6">Kontakt</h2>
+                    <div class="flex flex-col items-center mb-5">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 mb-2"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                            />
+                        </svg>
+                        <span>533 335 648</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 mb-1"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            />
+                        </svg>
+                        <span>medintegra@medintegra.pl</span>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer class="py-8 bg-brand-dark text-gray-100 text-center">
-            <span>Copyright &copy; 2021 Medintegra</span>
+        <footer class="bg-gray-800 text-gray-100 text-center">
+            <img
+                class="h-24 mb-6 mx-auto"
+                src="./assets/Logo.png"
+                alt="Medintegra"
+            />
+            <div class="flex flex-wrap mx-auto">
+                <div class="w-1/2 md:w-1/3">
+                    <span class="text-md font-bold">Social media</span>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Google</li>
+                    </ul>
+                </div>
+                <div class="w-1/2 md:w-1/3">
+                    <span class="text-md font-bold">Na skróty</span>
+                    <ul>
+                        <li>Home</li>
+                        <li>Oferta</li>
+                        <li>Realizacje</li>
+                        <li>Firma</li>
+                        <li>Kontakt</li>
+                    </ul>
+                </div>
+                <div class="w-full mt-4 md:mt-0 md:w-1/3">
+                    <span class="text-md font-bold">Kontakt</span>
+                    <ul>
+                        <li>ul. Akacjowa Suszec</li>
+                        <li>533 335 648</li>
+                        <li>medintegra@medintegra.pl</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="py-8 mt-8 bg-gray-900">
+                <span>Copyright &copy; 2021 Medintegra</span>
+            </div>
         </footer>
 
         <script src="./js/main.js"></script>

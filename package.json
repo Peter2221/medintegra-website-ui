@@ -18,5 +18,9 @@
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17",
     "vite": "^2.6.7"
+  },
+  "dependencies": {
+    "lightbox2": "^2.11.3",
+    "simplelightbox": "^2.9.0"
   }
 }
